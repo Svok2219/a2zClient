@@ -13,6 +13,12 @@ Link {
   border-radius: 250px;
   letter-spacing: 1px;
 }
+.boxes {
+  background-color: #f58634;
+
+  width: 200px;
+  height: 200px;
+}
 
 .button {
   background-color: #ddd;
