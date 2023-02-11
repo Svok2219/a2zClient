@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  BrowserRouter,
+} from "react-router-dom";
+
+import { createContext } from "react";
+import { useState } from "react";
+
+import { useEffect } from "react";
+import Login from "./Login/Login";
+import Home from "./Home/Home";
+// import "bootstrap/dist/css/bootstrap.min.css";
+/* The following line can be included in your src/index.js or App.js file */
+
+// import "./App.css";
+
+export const Context = createContext({});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Context.Provider>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/Login">
+            <Login />
+          </Route>
+        </Switch>
+      </Router>
+    </Context.Provider>
   );
 }
 
