@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import Login from "./Login/Login";
 import Home from "./Home/Home";
 import DashBoard from "./DashBoard/DashBoard";
+import Course from "./Course/Course";
 // import "bootstrap/dist/css/bootstrap.min.css";
 /* The following line can be included in your src/index.js or App.js file */
 
@@ -35,6 +36,9 @@ function App() {
           </Route>
           <Route path="/Dashboard">
             <DashBoard />
+          </Route>
+          <Route path="/Courses">
+            <Course />
           </Route>
         </Switch>
       </Router>
