@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import HeroFooter from "../Asset/Footer";
 import Navbar from "../Asset/Navbar";
 
@@ -47,12 +48,14 @@ const Login = () => {
                   />
                 </div>
                 <div className="text-center mt-5">
-                  <div
-                    className="btn rounded font-weight-bold text-light"
-                    style={{ backgroundColor: "#DE6D19", fontSize: "24px" }}
-                  >
-                    Log in
-                  </div>
+                  <Link to={"/Dashboard"}>
+                    <div
+                      className="btn rounded font-weight-bold text-light"
+                      style={{ backgroundColor: "#DE6D19", fontSize: "24px" }}
+                    >
+                      Log in
+                    </div>
+                  </Link>
                 </div>
               </div>
             </form>

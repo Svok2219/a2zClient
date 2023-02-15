@@ -11,7 +11,7 @@ const Navbar = () => {
         style={{ fontSize: "30px" }}
         to="/"
       >
-        <img src="ss58.png" className="img-fluid w-75" />
+        <img src="ss58.png" className=" img-fluid w-25" />
       </Link>
       <button
         class="navbar-toggler"
@@ -26,19 +26,13 @@ const Navbar = () => {
       </button>
       <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto text-white justify-content-center align-items-md-center">
-          <Link class="nav-link mx-4 text-white font-weight-bold" to="/Donors">
+          <Link class="nav-link mx-4 text-white font-weight-bold" to="#Courses">
             Courses
           </Link>
-          <Link
-            class="nav-link mx-4 text-white font-weight-bold"
-            to="/Applications"
-          >
+          <Link class="nav-link mx-4 text-white font-weight-bold" to="#Contact">
             Contact US{" "}
           </Link>
-          <Link
-            to="/HelpSomeone"
-            class="nav-link font-weight-bold mx-4 text-white"
-          >
+          <Link to="#" class="nav-link font-weight-bold mx-4 text-white">
             Forum{" "}
           </Link>
 

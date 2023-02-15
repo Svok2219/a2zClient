@@ -12,6 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   SwiperCore.use([Pagination]);
@@ -38,13 +39,19 @@ const Home = () => {
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, ...
             </h5>
-            <button
-              class="button loginBtn btn-light font-weight-bold bg-light  px-5 "
-              style={{ color: "#F58634", letterSpacing: 1.9, fontSize: "20px" }}
-              type="button"
-            >
-              Log In
-            </button>{" "}
+            <Link to={"/Login"}>
+              <button
+                class="button loginBtn btn-light font-weight-bold bg-light  px-5 "
+                style={{
+                  color: "#F58634",
+                  letterSpacing: 1.9,
+                  fontSize: "20px",
+                }}
+                type="button"
+              >
+                Log In
+              </button>{" "}
+            </Link>
           </div>
           <div
             className="col-md-6 text-center py-4"
@@ -83,7 +90,7 @@ const Home = () => {
         </dic>
       </div>
 
-      <div className="my-5  text-center mx-5">
+      <div className="my-5  text-center mx-5" id="Courses">
         <h3 style={{ color: "#F58634" }}>
           <u>Offered Courses</u>
         </h3>
@@ -245,6 +252,7 @@ const Home = () => {
 
       <div
         className="my-5 mx-5 p-5 text-center"
+        id="Contact"
         style={{ backgroundColor: "#F8AF79", borderRadius: "12px" }}
       >
         <h3 className="" style={{ color: "#1F160F" }}>
