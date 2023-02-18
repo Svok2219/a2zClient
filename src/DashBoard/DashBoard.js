@@ -2,6 +2,7 @@ import React from "react";
 import HeroFooter from "../Asset/Footer";
 import Navbar from "../Asset/Navbar";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import { Link } from "react-router-dom";
 
 const DashBoard = () => {
   return (
@@ -139,9 +140,11 @@ const DashBoard = () => {
                     </span>
                   </div>
                   <div className="col-md-3  ">
-                    <div className="btn btn-secondary text-black px-4 py-2">
-                      <b> Go To Course </b>
-                    </div>
+                    <Link to="/Courses">
+                      <div className="btn btn-secondary text-black px-4 py-2">
+                        <b> Go To Course </b>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -217,9 +220,11 @@ const DashBoard = () => {
                     </span>
                   </div>
                   <div className="col-md-3  ">
-                    <div className="btn btn-secondary text-black px-4 py-2">
-                      <b> Go To Course </b>
-                    </div>
+                    <Link to="/Courses">
+                      <div className="btn btn-secondary text-black px-4 py-2">
+                        <b> Go To Course </b>
+                      </div>
+                    </Link>
                   </div>
                 </div>
               </div>
